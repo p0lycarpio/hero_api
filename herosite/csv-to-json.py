@@ -7,8 +7,8 @@ data = {}
 with open(csvData) as csvFile:
     csvRead = csv.DictReader(csvFile)
     for rows in csvRead:
-        id = rows['id']
-        data[id] = rows
+        name = rows['name']
+        data[name] = rows
 
 with open(jsonOut, 'w') as jsonFile:
     jsonFile.write(json.dumps(data, indent=4))
