@@ -14,6 +14,6 @@ COPY requirements.txt /usr/src/app/requirements.txt
 RUN pip install -r requirements.txt
 
 # Ajout du reste du code de l'application
-COPY herosite .
+#COPY herosite .
 
 #CMD ["python", "manage.py", "runserver"]
